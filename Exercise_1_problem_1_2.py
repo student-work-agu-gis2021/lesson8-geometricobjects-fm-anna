@@ -89,8 +89,8 @@ def create_poly_geom(coords):
   assert len(coords) >=3, "Polygon object requires at least three Points!"
   for i in coords:
     assert type(i) is tuple, "All list values should be coordinate tuples!"
-    poly = Polygon(coords)
-    return poly
+  poly = Polygon(coords)
+  return poly
 
 # Demonstrate the usage of the function. For example, create a Polygon with three points: `(45.2, 22.34)`, `(100.22, -3.20)` & `(70.0, 10.20)`.
 
@@ -192,7 +192,11 @@ except Exception as e:
 
 
 #  YOUR CODE HERE 9 to define get_length()
-
+def get_length(geom):
+  if geom.geom_type == 'LineStirng':
+    return geom.length
+  elif geom.geom_type == 'Polygon':
+    return geom.exterior.length
 
 # Test and demonstrate the usage of the function:
 
