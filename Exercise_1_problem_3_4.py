@@ -72,6 +72,12 @@ print('dest_points length:', len(dest_points))
 
 # YOUR CODE HERE 4 to append points in orig_points and dest_points
 from shapely.geometry import Point
+for index, data in data.iterrows():
+  orig = Point(data['x'],data['y'])
+  dest = Point(data['x'],data['y'])
+
+  orig_points.append(data_orig)
+  dest_points.append(data_dest)
 
 # CODE FOR TESTING YOUR SOLUTION
 

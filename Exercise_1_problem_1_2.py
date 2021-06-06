@@ -15,7 +15,7 @@ def create_point_geom(x_coord, y_coord):
   """
   parameter : x,y
   Purpose   : create Point
-  """"
+  """
   point = Point(x_coord,y_coord)
   return point
 
@@ -157,7 +157,9 @@ except Exception as e:
 
 # YOUR CODE HERE 8 to define get_area()
 def get_area(polygon):
-  assert
+  assert type(poly) == Polygon, "Input should be a Shapely Polygon - objects!"
+  return poly.area
+
 # Test and demonstrate the usage of the function:
 get_area(poly1)
 
