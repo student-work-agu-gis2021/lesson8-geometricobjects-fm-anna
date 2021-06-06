@@ -13,8 +13,8 @@ from shapely.geometry import Point, LineString, Polygon
 #YOUR CODE HERE 1 to define create_point_geom()
 def create_point_geom(x_coord, y_coord):
   """
-  parameter:x,y
-  Purpose:create Point
+  parameter : x,y
+  Purpose   : create Point
   """"
   point = Point(x_coord,y_coord)
   return point
@@ -35,6 +35,10 @@ print(point1.geom_type)
 
 # YOUR CODE HERE 2 to define create_line_geom()
 def create_line_geom(points):
+  """
+  parameter : points
+  Purpose   : creae line
+  """
   assert type(points) == list, "Input should be a list!"
   assert len(pointts)>=2, "LineString object requires at least two Points!"
   line = LineString([points[0],points[1]])
