@@ -123,6 +123,10 @@ except Exception as e:
 
 #  YOUR CODE HERE 6 to define get_centroid()
 def get_centroid(geom):
+  """
+  parameter : geom
+  Purpose   : caluculate centroid
+  """
   assert type(geom) == Point or type(geom) == LineString or typr(geom) == Polygon, "Input should  be a shapely geometry!"
   return geom.centroid
 
