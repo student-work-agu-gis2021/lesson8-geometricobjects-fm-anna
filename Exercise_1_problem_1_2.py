@@ -37,7 +37,7 @@ print(point1.geom_type)
 def create_line_geom(points):
   """
   parameter : points
-  Purpose   : creae line
+  Purpose   : create line
   """
   assert type(points) == list, "Input should be a list!"
   assert len(pointts)>=2, "LineString object requires at least two Points!"
@@ -81,6 +81,10 @@ except Exception as e:
 
 # YOUR CODE HERE 4 to define create_poly_geom()
 def create_poly_geom(coords):
+  """
+  parameter : coords
+  Purpose   : create polygon
+  """
   assert type(coords) is list, "Input shold be a list!"
   assert len(coords) >=3, "Polygon object requires at least three Points!"
   for i in coords:
@@ -157,6 +161,10 @@ except Exception as e:
 
 # YOUR CODE HERE 8 to define get_area()
 def get_area(polygon):
+  """
+  parameter : polygon
+  Purpose   : 
+  """
   assert type(poly) == Polygon, "Input should be a Shapely Polygon - objects!"
   return poly.area
 
