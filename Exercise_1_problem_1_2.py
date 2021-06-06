@@ -163,7 +163,7 @@ except Exception as e:
 def get_area(polygon):
   """
   parameter : polygon
-  Purpose   : 
+  Purpose   : calculate area
   """
   assert type(poly) == Polygon, "Input should be a Shapely Polygon - objects!"
   return poly.area
