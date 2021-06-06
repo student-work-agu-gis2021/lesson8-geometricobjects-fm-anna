@@ -95,7 +95,7 @@ def create_poly_geom(coords):
 # Demonstrate the usage of the function. For example, create a Polygon with three points: `(45.2, 22.34)`, `(100.22, -3.20)` & `(70.0, 10.20)`.
 
 # YOUR CODE HERE 5 to define poly1 with three points
-poly1 = create_poly_gheom([(45.2, 22.34),(100.22, -3.20),(70.0, 10.20)])
+poly1 = create_poly_geom([(45.2, 22.34),(100.22, -3.20),(70.0, 10.20)])
 
 # CODE FOR TESTING YOUR SOLUTION
 print(poly1)
@@ -131,7 +131,7 @@ def get_centroid(geom):
   parameter : geom
   Purpose   : caluculate centroid
   """
-  assert type(geom) == Point or type(geom) == LineString or typr(geom) == Polygon, "Input should  be a shapely geometry!"
+  assert type(geom) == Point or type(geom) == LineString or type(geom) == Polygon, "Input should  be a shapely geometry!"
   return geom.centroid
 
 # Test and demonstrate the usage of the function. You can, for example, create shapely objects using the functions you created in problem 1 and print out information about their centroids:
@@ -160,7 +160,7 @@ except Exception as e:
 #    - Inside the function, you should first check with `assert` -functionality that the input is a Shapely Polygon geometry (see [lesson 6](https://geo-python.github.io/site/lessons/L6/interpreting-errors.html#assertions) and [hints](https://automating-gis-processes.github.io/site/develop/lessons/L1/exercise-1.html#hints)). If something else than a list is passed for the function, you should return an Error message: `"Input should be a Shapely Polygon -object!"`
 
 # YOUR CODE HERE 8 to define get_area()
-def get_area(polygon):
+def get_area(poly):
   """
   parameter : polygon
   Purpose   : calculate area
